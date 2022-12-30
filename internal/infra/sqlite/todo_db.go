@@ -3,12 +3,11 @@ package sqlite
 import (
 	"database/sql"
 	_ "github.com/mattn/go-sqlite3"
-	"strings"
 	"todoapp/pkg/todoapp"
 )
 
 const (
-	createTableQuery = `CREATE TABLE todo (
+	createTableQuery = `CREATE TABLE IF NOT EXISTS todo (
 		"id" integer NOT NULL PRIMARY KEY AUTOINCREMENT,		
 		"date" DATE,
 		"value" TEXT
@@ -31,14 +30,12 @@ func NewTodoDB(file string) (*TodoDB, error) {
 
 	statement, err := db.Prepare(createTableQuery)
 	if err != nil {
-		if !strings.Contains(err.Error(), "already exists") {
-			return nil, err
-		}
-	} else {
-		_, err = statement.Exec()
-		if err != nil {
-			return nil, err
-		}
+		return nil, err
+	}
+
+	_, err = statement.Exec()
+	if err != nil {
+		return nil, err
 	}
 
 	return &TodoDB{db: db}, nil
