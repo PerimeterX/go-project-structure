@@ -2,3 +2,4 @@ vendor/
 .idea/
 .vscode
 todo.db
+./todoapp

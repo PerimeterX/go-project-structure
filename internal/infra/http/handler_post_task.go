@@ -3,15 +3,14 @@ package http
 import (
 	"encoding/json"
 	"net/http"
-	"todoapp/internal/core/todo"
 	"todoapp/pkg/todoapp"
 )
 
 type postTaskHandler struct {
-	todoService *todo.Service
+	todoService TODOService
 }
 
-func newPostTaskHandler(todoService *todo.Service) *postTaskHandler {
+func newPostTaskHandler(todoService TODOService) *postTaskHandler {
 	return &postTaskHandler{todoService: todoService}
 }
 

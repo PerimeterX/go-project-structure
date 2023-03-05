@@ -3,14 +3,13 @@ package http
 import (
 	"encoding/json"
 	"net/http"
-	"todoapp/internal/core/todo"
 )
 
 type getFutureTasksHandler struct {
-	todoService *todo.Service
+	todoService TODOService
 }
 
-func newGetFutureTasksHandler(todoService *todo.Service) *getFutureTasksHandler {
+func newGetFutureTasksHandler(todoService TODOService) *getFutureTasksHandler {
 	return &getFutureTasksHandler{todoService: todoService}
 }
 

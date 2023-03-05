@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/gorilla/mux"
 	"net/http"
-	"todoapp/internal/core/todo"
+	"todoapp/pkg/todoapp"
 )
 
 type Server struct {
@@ -13,7 +13,7 @@ type Server struct {
 	httpServer *http.Server
 }
 
-func NewServer(addr string, todoService *todo.Service) (*Server, error) {
+func NewServer(addr string, todoService TODOService) (*Server, error) {
 	s := &Server{
 		addr: addr,
 	}
@@ -21,6 +21,11 @@ func NewServer(addr string, todoService *todo.Service) (*Server, error) {
 	s.registerRoutes(router, todoService)
 	s.httpServer = &http.Server{Addr: addr, Handler: router}
 	return s, nil
+}
+
+type TODOService interface {
+	Insert(task *todoapp.Task) error
+	FutureTasks() ([]*todoapp.Task, error)
 }
 
 func (s *Server) Start() {
@@ -35,7 +40,7 @@ func (s *Server) Close() error {
 	return s.httpServer.Shutdown(context.TODO())
 }
 
-func (s *Server) registerRoutes(router *mux.Router, todoService *todo.Service) {
+func (s *Server) registerRoutes(router *mux.Router, todoService TODOService) {
 	router.Methods(http.MethodPost).Path("/task").Handler(newPostTaskHandler(todoService))
 	router.Methods(http.MethodGet).Path("/future_tasks").Handler(newGetFutureTasksHandler(todoService))
 }
