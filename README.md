@@ -1,6 +1,5 @@
 # Go Project Structure
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/perimeterx/go-project-structure.svg)](https://pkg.go.dev/github.com/perimeterx/go-project-structure)
 [![Licence](https://img.shields.io/github/license/perimeterx/go-project-structure)](LICENSE)
 [![Latest Release](https://img.shields.io/github/v/release/perimeterx/go-project-structure)](https://github.com/perimeterx/go-project-structure/releases)
 [![Issues](https://img.shields.io/github/issues/perimeterx/go-project-structure?logo=github)](https://github.com/perimeterx/go-project-structure/issues)
