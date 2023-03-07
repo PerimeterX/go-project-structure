@@ -14,17 +14,17 @@ git checkout -b my-new-feature
 ```
 where "my-new-feature" describes what you're working on.
 
-## 5. Add documentation and examples for new or updated functionality
+## 3. Add documentation and examples for new or updated functionality
 
 - Please review the [README.md](README.md) file in this project to see if they are impacted by your change and update them accordingly.
 - If you've changed or added directories, make sure to provide or update their internal README file.
 - Once finished, make sure to create a dedicated pull request in the example branch, updating according to your change.
 
-## 6. Add to CHANGELOG.md
+## 4. Add to CHANGELOG.md
 
 Any notable changes should be recorded in the CHANGELOG.md following the [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) conventions.
 
-## 7. Submit a pull request and describe the change
+## 5. Submit a pull request and describe the change
 
 Push your changes to your branch and open a pull request against the parent repo on GitHub. The project administrators will review your pull request and respond with feedback.
 
