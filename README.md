@@ -5,7 +5,7 @@
 [![Issues](https://img.shields.io/github/issues/perimeterx/go-project-structure?logo=github)](https://github.com/perimeterx/go-project-structure/issues)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
-For information about this repository visit the main branch.
+For information about this repository visit the [main branch](https://github.com/PerimeterX/go-project-structure).
 
 ## How To Run This Example Project
 
