@@ -5,6 +5,8 @@
 [![Issues](https://img.shields.io/github/issues/perimeterx/go-project-structure?logo=github)](https://github.com/perimeterx/go-project-structure/issues)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
+<img align="right" alt="go-project-structure-logo" src="https://raw.githubusercontent.com/PerimeterX/go-project-structure/assets/logo.png">
+
 This is a template repository for Go projects.
 
 We released a blog post [TODO add link when ready] revealing the story behind this structure. 
