@@ -1,5 +1,7 @@
 # Go Project Structure Example
 
+<img align="right" width="320" alt="go-project-structure-logo" src="https://raw.githubusercontent.com/PerimeterX/go-project-structure/assets/logo.svg">
+
 [![Licence](https://img.shields.io/github/license/perimeterx/go-project-structure)](LICENSE)
 [![Latest Release](https://img.shields.io/github/v/release/perimeterx/go-project-structure)](https://github.com/perimeterx/go-project-structure/releases)
 [![Issues](https://img.shields.io/github/issues/perimeterx/go-project-structure?logo=github)](https://github.com/perimeterx/go-project-structure/issues)
