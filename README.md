@@ -9,7 +9,7 @@
 
 This is a template repository for Go projects.
 
-We released a blog post [TODO add link when ready] revealing the story behind this structure. 
+We released a [blog post](https://www.humansecurity.com/tech-engineering-blog/finding-the-best-go-project-structure-part-1) revealing the story behind this structure. 
 Our internal journey at HUMAN Security to find the best project structure, the decision we’ve taken,
 and the conclusions we’ve drawn along the way.
 
@@ -36,7 +36,7 @@ according to [hexagonal architecture](https://en.wikipedia.org/wiki/Hexagonal_ar
 - Reusability
 - Dependency declaration
 
-Fore more info, read the full article behind this structure [TODO add link when ready].
+Fore more info, read the [full article](https://www.humansecurity.com/tech-engineering-blog/finding-the-best-go-project-structure-part-1) behind this structure.
 
 ## Contact and Contribute
 
